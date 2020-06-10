@@ -1,15 +1,15 @@
 // Business Logic
 function leapYear(year) {
-  if ((year % 4 === 0) && (year % 100 !== 0) |)  {
+  if (year % 4 === 0) {
     return true;
-  } else  {
+  } else  { 
     return false;
   }
 }
 
 // User Interface Logic
 $(document).ready(function() {
-  $("form#leap-year").submit(funciton(event)  {
+  $("form#leap-year").submit(function(event)  {
     event.preventDefault();
     const year = parseInt($("input#year").val());
     const result = leapYear(year);
